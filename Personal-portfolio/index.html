@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d185f7bfb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>AI Student</p>
+            <h1>Hi, I am <span>Mateo</span><br>Pasho from Albania</h1>
+        </div>
+    </div>
+</div>
+
+<!-------------about---------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am an AI student with a strong foundation in artificial intelligence 
+                    and a complementary skill set in web development. Alongside my passion
+                     for AI, I have honed my expertise in front-end web technologies, 
+                     including HTML, CSS, JavaScript, and various frameworks. 
+                     This combination of AI knowledge and web development skills allows me 
+                     to create intelligent and user-friendly web applications that leverage 
+                     the power of AI algorithms. I am excited to apply my multidisciplinary 
+                     abilities to develop innovative AI-driven solutions and deliver seamless 
+                     user experiences on the web.</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Intermediate programmer proficient in Python fundamentals.</li>
+                            <li><span>JavaScript</span><br>Novice programmer proficient in JS fundamentals.</li>
+                            <li><span>Typescript</span><br>Novice programmer proficient in TS fundamentals.</li>
+                            <li><span>R</span><br>Novice programmer proficient in R fundamentals.</li>
+                            <li><span>Vue and Laravel</span><br>Novice programmer proficient </li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>No Programming jobs</span><br>Either than my own projects I haven't had the possibility to find a job in the field of my study</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Matura</span><br>I have made my matura in Albania averaging 9.83/10</li>
+                            <li><span>University</span><br>2021 and on going studies at JKU Linz on AI</li>
+                        </ul>
+                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------services-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Novice web designer with foundational skills.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Design</h2>
+                <p>Novice web designer with foundational skills.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-blog"></i>
+                <h2>Web Design</h2>
+                <p>Novice web designer with foundational skills.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--contact======================-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mateo.pasho27@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i>+4368184455191</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100075311581481"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com/mateo02087899?s=21&t=KD7WKo68-f5YoJIjJ4Rp3g"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=https://instagram.com/mateo.pasho?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mateo-pasho-a8151613b"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Mateo_Pasho_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Yourname" required>
+                    <input type="email" name="email" placeholder="Youremail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>>Mateo - Copyright (c) 2023 Mateo Pasho</p>  
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200"
+    }
+
+</script>
+
+</body>
+</html>
